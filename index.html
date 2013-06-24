@@ -21,7 +21,7 @@
       <div class="album-list">
         {{#each}}
           <div class="album">
-            <img src="http://cdn3.rd.io/album/d/b/c/0000000000220cbd/1/square-200.jpg">
+            <img {{bindAttr src=artwork}}>
             <p class="album-name">{{name}}</p>
             <p class="album-artist">{{artist}}</p>
             <p class="song-count">
