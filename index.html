@@ -24,7 +24,9 @@
       <div class="album-list">
         {{#each}}
           <div class="album">
-            <img {{bindAttr src=artwork}}>
+            {{#linkTo 'album' this}}
+              <img {{bindAttr src=artwork}}>
+            {{/linkTo}}
             <p class="album-name">{{name}}</p>
             <p class="album-artist">{{artist}}</p>
             <p class="song-count">
