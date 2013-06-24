@@ -19,42 +19,17 @@
       <header><h1>BümBöx</h1></header>
 
       <div class="album-list">
-        <div class="album">
-          <img src="http://cdn3.rd.io/album/d/b/c/0000000000220cbd/1/square-200.jpg">
-          <p class="album-name">In An Aeroplane Over the Sea</p>
-          <p class="album-artist">Neutral Milk Hotel</p>
-          <p class="song-count">
-            8 songs
-            <span class="explicit">EXPLICIT</span>
-          </p>
-        </div>
-        <div class="album">
-          <img src="http://cdn3.rd.io/album/d/b/c/0000000000220cbd/1/square-200.jpg">
-          <p class="album-name">In An Aeroplane Over the Sea</p>
-          <p class="album-artist">Neutral Milk Hotel</p>
-          <p class="song-count">
-            8 songs
-            <span class="explicit">EXPLICIT</span>
-          </p>
-        </div>
-        <div class="album">
-          <img src="http://cdn3.rd.io/album/d/b/c/0000000000220cbd/1/square-200.jpg">
-          <p class="album-name">In An Aeroplane Over the Sea</p>
-          <p class="album-artist">Neutral Milk Hotel</p>
-          <p class="song-count">
-            8 songs
-            <span class="explicit">EXPLICIT</span>
-          </p>
-        </div>
-        <div class="album">
-          <img src="http://cdn3.rd.io/album/d/b/c/0000000000220cbd/1/square-200.jpg">
-          <p class="album-name">In An Aeroplane Over the Sea</p>
-          <p class="album-artist">Neutral Milk Hotel</p>
-          <p class="song-count">
-            8 songs
-            <span class="explicit">EXPLICIT</span>
-          </p>
-        </div>
+        {{#each}}
+          <div class="album">
+            <img src="http://cdn3.rd.io/album/d/b/c/0000000000220cbd/1/square-200.jpg">
+            <p class="album-name">{{name}}</p>
+            <p class="album-artist">{{artist}}</p>
+            <p class="song-count">
+              8 songs
+              <span class="explicit">EXPLICIT</span>
+            </p>
+          </div>
+        {{/each}}
       </div>
     </script>
 
