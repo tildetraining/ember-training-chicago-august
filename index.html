@@ -26,7 +26,7 @@
             <p class="album-artist">{{artist}}</p>
             <p class="song-count">
               8 songs
-              <span class="explicit">EXPLICIT</span>
+              {{#if isExplicit}}<span class="explicit">EXPLICIT</span>{{/if}}
             </p>
           </div>
         {{/each}}
